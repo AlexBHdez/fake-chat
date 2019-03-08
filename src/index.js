@@ -4,12 +4,13 @@ import './index.scss';
 
 // Components
 import Header from './components/Header/header';
+import Footer from './components/Footer/footer';
 
 const App = () => (
   <Fragment>
     <Header />
     <main>Main</main>
-    <footer>Footer</footer>
+    <Footer />
   </Fragment>
 );
 
