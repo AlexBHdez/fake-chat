@@ -10,6 +10,12 @@ body {
   #root {
     @include flex(layout);
 
+    header {
+      @include flex(center);
+      
+      height: $footer-header-height;
+    }
+
     main {
       flex: 1;
       min-height: em(200);
@@ -18,7 +24,7 @@ body {
     footer {
       @include flex(center);
   
-      height: $footer-height;
+      height: $footer-header-height;
       width: 100%;
     }
   }
