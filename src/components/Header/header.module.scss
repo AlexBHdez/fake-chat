@@ -1,6 +1,15 @@
 @import '../../sass/variables/variables';
 @import '../../sass/mixins/em';
+@import '../../sass/mixins/font-size';
 
 .header {
   background-color: $primary;
+
+  .brand {
+    @include font-size-em(20);
+    color: #000;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 }

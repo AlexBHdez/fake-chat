@@ -4,7 +4,7 @@ import style from './header.module.scss';
 
 const Header = () => (
   <header className={style.header}>
-    <a href="/">fakeChat</a>
+    <a href="/" className={style.brand} >fakeChat</a>
   </header>
 );
 
