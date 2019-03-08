@@ -1,0 +1,5 @@
+$browserContext: 16;
+
+@function em($pixels, $context: $browserContext) {
+  @return ($pixels / $context) * 1em;
+}
