@@ -1,6 +1,25 @@
-@import '../fonts/muli';
+html,
+body,
+#root {
+  height: 100%;
+}
 
 body {
-  font-family: 'Muli', serif;
-  font-weight: 700;
+  font-family: 'Muli', sans-serif;
+
+  #root {
+    @include flex(layout);
+
+    main {
+      flex: 1;
+      min-height: em(200);
+    }
+    
+    footer {
+      @include flex(center);
+  
+      height: $footer-height;
+      width: 100%;
+    }
+  }
 }
