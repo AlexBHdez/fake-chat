@@ -8,21 +8,22 @@ body {
   font-family: 'Muli', sans-serif;
 
   #root {
-    @include flex(layout);
+    @include flex(column, flex-start, stretch);
 
     header {
-      @include flex(center);
+      @include flex(column, center, center);
       
       height: $footer-header-height;
     }
 
     main {
+      @include flex(row, center, center);
       flex: 1;
       min-height: em(200);
     }
     
     footer {
-      @include flex(center);
+      @include flex(column, center, center);
   
       height: $footer-header-height;
       width: 100%;

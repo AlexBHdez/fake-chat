@@ -5,11 +5,15 @@ import './index.scss';
 // Components
 import Header from './components/Header/header';
 import Footer from './components/Footer/footer';
+import Chat from './components/Chat/chat';
 
 const App = () => (
   <Fragment>
     <Header />
-    <main>Main</main>
+    <main>
+      <Chat />
+      <Chat />
+    </main>
     <Footer />
   </Fragment>
 );

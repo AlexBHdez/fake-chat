@@ -1,14 +1,6 @@
-@mixin flex($pos) {
+@mixin flex($dir, $justify, $align) {
   display: flex;
-  
-  @if $pos == 'center' {
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  @if $pos == 'layout' {
-    flex-direction: column;
-    align-items: stretch;
-  }
+  flex-direction: $dir;
+  justify-content: $justify;
+  align-items: $align;
 }
