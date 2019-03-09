@@ -1,0 +1,33 @@
+@import '../../sass/mixins/index';
+
+.chat {
+  @include flex(column, flex-end, stretch);
+  
+  border: 1px solid #000;
+  
+  height: 100%;
+  flex-basis: 50%;
+
+  &__window {
+    @include font-size-em(12);
+
+    &_message {
+      background-color: limegreen;
+      color: #fff;
+      border-radius: em(5);
+      
+      display: inline;
+      margin: 1em;
+      padding: 1em;
+    }
+  }
+
+  &__write {
+    @include flex(row, center, stretch);
+    margin-top: em(20);
+
+    &_input {
+      flex: 1;
+    }
+  }
+}
