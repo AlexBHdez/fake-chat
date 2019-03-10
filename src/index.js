@@ -13,14 +13,31 @@ class App extends Component {
     users: [
       { name: 'Alex' },
       { name: 'Manu' }
-    ]
+    ],
+    messages: [
+      {from:'', to: '', date: '', text: 'holaaa'},
+      {text: 'holaaa'},
+      {text: 'holaaa'},
+    ],
   }
 
   showChats = () => {
     const { users } = this.state;
+
     return users.map((user, i) => 
-      <Chat key={i} user={user} />
+      <Chat 
+        key={i} 
+        user={user} 
+        messages={this.state.messages} 
+        submit={this.send}  
+      />
     )
+  };
+
+  send = (newMessage) => {
+    this.setState({
+      messages: [...this.state.messages, newMessage],
+    });
   };
 
   render() {
