@@ -9,8 +9,10 @@
   flex-basis: 50%;
 
   &__window {
-    @include font-size-em(12);
+    @include font-size-em(14);
     @include flex(column, flex-start, flex-end);
+
+    overflow-y: auto;
 
     &_message {
       background-color: limegreen;
@@ -19,7 +21,20 @@
       
       display: inline;
       margin: em(5) em(5) 0;
-      padding: 1em;
+      padding: .5em 1em;
+
+      &_author {
+        @include font-size-em(11, 14);
+
+        font-weight: 800;
+        margin-bottom: em(5, 11);
+      }
+    }
+
+    &_received {
+      align-self: flex-start;
+
+      background-color: goldenrod;
     }
   }
 

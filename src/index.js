@@ -14,11 +14,7 @@ class App extends Component {
       { name: 'Alex' },
       { name: 'Manu' }
     ],
-    messages: [
-      {from:'', to: '', date: '', text: 'holaaa'},
-      {text: 'holaaa'},
-      {text: 'holaaa'},
-    ],
+    messages: [],
   }
 
   showChats = () => {
@@ -26,8 +22,8 @@ class App extends Component {
 
     return users.map((user, i) => 
       <Chat 
-        key={i} 
-        user={user} 
+        key={i}
+        userFrom={user}
         messages={this.state.messages} 
         submit={this.send}  
       />
@@ -35,9 +31,11 @@ class App extends Component {
   };
 
   send = (newMessage) => {
-    this.setState({
-      messages: [...this.state.messages, newMessage],
-    });
+    if (newMessage.text !== '') {
+      this.setState({
+        messages: [...this.state.messages, newMessage],
+      });
+    }
   };
 
   render() {
