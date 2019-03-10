@@ -10,6 +10,7 @@
 
   &__window {
     @include font-size-em(12);
+    @include flex(column, flex-start, flex-end);
 
     &_message {
       background-color: limegreen;
@@ -17,7 +18,7 @@
       border-radius: em(5);
       
       display: inline;
-      margin: 1em;
+      margin: em(5) em(5) 0;
       padding: 1em;
     }
   }
