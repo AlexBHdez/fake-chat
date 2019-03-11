@@ -21,6 +21,7 @@ class App extends Component {
       <Chat 
         key={i}
         userFrom={user}
+        chatId={i}
         messages={this.state.messages} 
         submit={this.send}  
       />
