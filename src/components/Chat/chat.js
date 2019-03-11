@@ -41,20 +41,25 @@ class Chat extends Component {
   };
 
   render() {
+    const { messages } = this.props;
     return(
       <section className={style.chat}>
         <div className={style.chat__window} >
-          { this.showMessages(this.props.messages) }
+          { this.showMessages(messages) }
         </div>
         <form
         onSubmit={this.handleSubmit} 
         className={style.chat__write} >
           <input 
-            type="text" 
+            type="text"
+            placeholder="Type a message"
             className={style.chat__write_input}
             ref={input => this.text = input}
           />
-          <button type="submit">send</button>
+          <button 
+            type="submit" 
+            className={style.chat__write_button}
+          ></button>
         </form>
       </section>
     )

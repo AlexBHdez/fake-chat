@@ -5,6 +5,7 @@ body,
 }
 
 body {
+  background-color: $white;
   font-family: 'Muli', sans-serif;
 
   #root {
@@ -24,6 +25,7 @@ body {
     
     footer {
       @include flex(column, center, center);
+      @include font-size-em(14);
   
       height: $footer-header-height;
       width: 100%;

@@ -3,11 +3,11 @@
 @import '../../sass/mixins/font-size';
 
 .header {
-  background-color: $primary;
+  background-color: rgba($primary, .85);
 
   .brand {
     @include font-size-em(20);
-    color: #000;
+    color: $white;
     font-weight: 800;
     text-transform: uppercase;
     text-decoration: none;

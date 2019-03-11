@@ -1,8 +1,17 @@
 // Colors
-$primary: tomato;
+$primary: #7781FF;
+$secondary: lightgrey;
+$white: #F5F5F5; 
+$black: #000;
 
 // Heights
-$footer-header-height: 60px;
+$footer-header-height: 50px;
+$input-height: em(35);
 
 // Timing
 $fast: .3s;
+
+// Forms
+$radius-message: 5px;
+$radius-inputs: 15px;
+$circle: 50%;

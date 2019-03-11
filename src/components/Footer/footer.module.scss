@@ -1,5 +1,6 @@
 @import '../../sass/variables/variables';
 
 .footer {
-  background-color: $primary;
+  background-color: rgba($primary, .85);
+  color: $white;
 }
