@@ -1,13 +1,13 @@
 {
-  "main.css": "/fake-chat/static/css/main.5beb9454.chunk.css",
-  "main.js": "/fake-chat/static/js/main.d8371ce1.chunk.js",
-  "main.js.map": "/fake-chat/static/js/main.d8371ce1.chunk.js.map",
+  "main.css": "/fake-chat/static/css/main.32035a67.chunk.css",
+  "main.js": "/fake-chat/static/js/main.551c8695.chunk.js",
+  "main.js.map": "/fake-chat/static/js/main.551c8695.chunk.js.map",
   "runtime~main.js": "/fake-chat/static/js/runtime~main.51619b0a.js",
   "runtime~main.js.map": "/fake-chat/static/js/runtime~main.51619b0a.js.map",
   "static/js/2.aad716e7.chunk.js": "/fake-chat/static/js/2.aad716e7.chunk.js",
   "static/js/2.aad716e7.chunk.js.map": "/fake-chat/static/js/2.aad716e7.chunk.js.map",
   "index.html": "/fake-chat/index.html",
-  "precache-manifest.0bb42970f3747b691831d299ebcf94fd.js": "/fake-chat/precache-manifest.0bb42970f3747b691831d299ebcf94fd.js",
+  "precache-manifest.956f122b5672d9467587d15482fd5b88.js": "/fake-chat/precache-manifest.956f122b5672d9467587d15482fd5b88.js",
   "service-worker.js": "/fake-chat/service-worker.js",
-  "static/css/main.5beb9454.chunk.css.map": "/fake-chat/static/css/main.5beb9454.chunk.css.map"
+  "static/css/main.32035a67.chunk.css.map": "/fake-chat/static/css/main.32035a67.chunk.css.map"
 }

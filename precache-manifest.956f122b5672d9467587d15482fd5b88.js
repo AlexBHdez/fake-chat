@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/fake-chat/static/js/runtime~main.51619b0a.js"
   },
   {
-    "revision": "7f88fb3638d092c8df06",
-    "url": "/fake-chat/static/js/main.d8371ce1.chunk.js"
+    "revision": "ae0f25dc3e0dc4847f0a",
+    "url": "/fake-chat/static/js/main.551c8695.chunk.js"
   },
   {
     "revision": "653ce8636866c453ae7d",
     "url": "/fake-chat/static/js/2.aad716e7.chunk.js"
   },
   {
-    "revision": "7f88fb3638d092c8df06",
-    "url": "/fake-chat/static/css/main.5beb9454.chunk.css"
+    "revision": "ae0f25dc3e0dc4847f0a",
+    "url": "/fake-chat/static/css/main.32035a67.chunk.css"
   },
   {
-    "revision": "460927b21d3923778c6cc129a36ada19",
+    "revision": "1a87098a04fa5c5c0060dade289ea4d3",
     "url": "/fake-chat/index.html"
   }
 ];
