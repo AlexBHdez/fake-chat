@@ -1,13 +1,13 @@
 {
-  "main.css": "/AlexBHdez/fake-chat/static/css/main.5beb9454.chunk.css",
-  "main.js": "/AlexBHdez/fake-chat/static/js/main.d8371ce1.chunk.js",
-  "main.js.map": "/AlexBHdez/fake-chat/static/js/main.d8371ce1.chunk.js.map",
-  "runtime~main.js": "/AlexBHdez/fake-chat/static/js/runtime~main.a350d21d.js",
-  "runtime~main.js.map": "/AlexBHdez/fake-chat/static/js/runtime~main.a350d21d.js.map",
-  "static/js/2.aad716e7.chunk.js": "/AlexBHdez/fake-chat/static/js/2.aad716e7.chunk.js",
-  "static/js/2.aad716e7.chunk.js.map": "/AlexBHdez/fake-chat/static/js/2.aad716e7.chunk.js.map",
-  "index.html": "/AlexBHdez/fake-chat/index.html",
-  "precache-manifest.63bf0d398657b6de395a20b8443a031a.js": "/AlexBHdez/fake-chat/precache-manifest.63bf0d398657b6de395a20b8443a031a.js",
-  "service-worker.js": "/AlexBHdez/fake-chat/service-worker.js",
-  "static/css/main.5beb9454.chunk.css.map": "/AlexBHdez/fake-chat/static/css/main.5beb9454.chunk.css.map"
+  "main.css": "/fake-chat/static/css/main.5beb9454.chunk.css",
+  "main.js": "/fake-chat/static/js/main.d8371ce1.chunk.js",
+  "main.js.map": "/fake-chat/static/js/main.d8371ce1.chunk.js.map",
+  "runtime~main.js": "/fake-chat/static/js/runtime~main.51619b0a.js",
+  "runtime~main.js.map": "/fake-chat/static/js/runtime~main.51619b0a.js.map",
+  "static/js/2.aad716e7.chunk.js": "/fake-chat/static/js/2.aad716e7.chunk.js",
+  "static/js/2.aad716e7.chunk.js.map": "/fake-chat/static/js/2.aad716e7.chunk.js.map",
+  "index.html": "/fake-chat/index.html",
+  "precache-manifest.0bb42970f3747b691831d299ebcf94fd.js": "/fake-chat/precache-manifest.0bb42970f3747b691831d299ebcf94fd.js",
+  "service-worker.js": "/fake-chat/service-worker.js",
+  "static/css/main.5beb9454.chunk.css.map": "/fake-chat/static/css/main.5beb9454.chunk.css.map"
 }

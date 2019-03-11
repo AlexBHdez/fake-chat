@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/AlexBHdez/fake-chat/precache-manifest.63bf0d398657b6de395a20b8443a031a.js"
+  "/fake-chat/precache-manifest.0bb42970f3747b691831d299ebcf94fd.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/AlexBHdez/fake-chat/index.html", {
+workbox.routing.registerNavigationRoute("/fake-chat/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
