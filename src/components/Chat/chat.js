@@ -18,12 +18,9 @@ class Chat extends Component {
     this.text.value = '';
   };
 
-  whoIs = (user) => {
-    if (user !== this.props.userFrom.name) {
-      return true;
-    } else {
-      return false;
-    }
+  isMe = (user) => {
+    const { userFrom } = this.props;
+    return user !== userFrom.name ? true : false;
   };
 
   showMessages = (messages) => {
@@ -32,11 +29,11 @@ class Chat extends Component {
         key={i}
         className={classes(
           style.chat__window_message,
-          {[style.chat__window_received]: this.whoIs(message.from.name)}
+          {[style.chat__window_received]: this.isMe(message.from.name)}
         )}
       >
         <span className={style.chat__window_message_author}>
-          { this.whoIs(message.from.name) ? message.from.name : 'You' }
+          { this.isMe(message.from.name) ? message.from.name : 'You' }
         </span>
         <p>{ message.text }</p>
       </div>
@@ -46,7 +43,7 @@ class Chat extends Component {
   render() {
     return(
       <section className={style.chat}>
-        <div className={style.chat__window}>
+        <div className={style.chat__window} >
           { this.showMessages(this.props.messages) }
         </div>
         <form
