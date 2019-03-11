@@ -4,7 +4,6 @@ import './index.scss';
 
 // Components
 import Header from './components/Header/header';
-import Footer from './components/Footer/footer';
 import Chat from './components/Chat/chat';
 import Intro from './components/Intro/intro';
 
@@ -50,7 +49,6 @@ class App extends Component {
         <main>
           { users.length > 1 ? this.showChats() : <Intro submit={this.users} /> }
         </main>
-        <Footer />
       </Fragment>
     );
 
