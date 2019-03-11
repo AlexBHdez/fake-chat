@@ -1,12 +1,41 @@
+@import '../../sass/variables/variables';
 @import '../../sass/mixins/index';
 
 .intro {
   &__title {
     margin-bottom: em(10);
+    text-align: center;
+  }
+
+  &__input {
+    height: $input-height;
+    padding-left: em(20);
+
+    border-radius: $radius-inputs;
+    border: none;
+
+    &:first-of-type {
+      margin-top: em(20);
+      margin-right: em(10);
+    }
   }
 
   &__button {
     display: block;
+    cursor: pointer;
+    height: $input-height;
     width: 100%;
+
+    background-color: rgba($primary, .90);
+    color: $white;
+    transition: background-color $fast ease;
+
+    border-radius: $radius-inputs;
+    border: none;
+    margin-top: em(20);
+
+    &:hover {
+      background-color: $primary;
+    }
   }
 }

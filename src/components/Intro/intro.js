@@ -23,18 +23,20 @@ class Intro extends Component {
         <p className={style.intro__title}>Pick the username for each member of the chat.</p>
         <input 
           type="text" 
+          className={style.intro__input}
           placeholder="user one" 
           ref={input => this.userOne = input} 
         />
         <input 
           type="text" 
+          className={style.intro__input}
           placeholder="user two" 
           ref={input => this.userTwo = input}
         />
         <button 
           type="submit" 
           className={style.intro__button}
-        >pick</button>
+        >let's chat</button>
       </form>
     )
   }
