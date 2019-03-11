@@ -2,6 +2,16 @@
 @import '../../sass/mixins/index';
 
 .intro {
+  @include flex(column, initial, center);
+  
+  padding: em(25);
+  margin-top: auto;
+  
+  @media (min-width: $sm) {
+    display: block;
+    margin-top: 0;
+  }
+
   &__title {
     margin-bottom: em(10);
     text-align: center;
@@ -15,8 +25,12 @@
     border: none;
 
     &:first-of-type {
-      margin-top: em(20);
-      margin-right: em(10);
+      margin: em(10) 0;
+      
+      @media (min-width: $sm) {
+        margin-top: em(20);
+        margin-right: em(10);
+      }
     }
   }
 

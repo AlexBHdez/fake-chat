@@ -17,6 +17,14 @@
     @include font-size-em(14);
     
     color: $white;
+
+    span {
+      display: none;
+      
+      @media (min-width: $sm) {
+        display: inline;
+      }
+    }
     
     a {
       color: rgba($white, .85);

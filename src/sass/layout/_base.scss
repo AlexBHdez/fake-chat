@@ -19,9 +19,13 @@ body {
     }
 
     main {
-      @include flex(row, center, center);
+      @include flex(column, center, space-between);
       flex: 1;
-      min-height: em(200);
+
+      @media (min-width: $sm) {
+        @include flex(row, center, center);
+        min-height: em(200);
+      }
     }
     
     footer {
