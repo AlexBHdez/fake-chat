@@ -2,7 +2,7 @@
   "name": "fake-chat",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/AlexBHdez/fake-chat",
+  "homepage": "https://alexbhdez.github.io/fake-chat/",
   "dependencies": {
     "classnames": "^2.2.6",
     "node-sass": "^4.11.0",
