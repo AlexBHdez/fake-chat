@@ -18,6 +18,18 @@ class Chat extends Component {
     this.props.submit(newMessage);
     this.text.value = '';
   };
+  
+  scrollToBottom = () => {
+    const chatWindow = document.querySelectorAll('#chatWindow');
+    
+    if (chatWindow) {
+      setTimeout(() => {
+        chatWindow.forEach(elem => {
+          elem.scrollTop = elem.scrollTopMax;
+        })
+      }, 10)
+    }
+  };
 
   isMe = (user) => {
     const { userFrom } = this.props;
@@ -50,7 +62,7 @@ class Chat extends Component {
     const { messages } = this.props;
     return(
       <section className={style.chat}>
-        <div className={style.chat__window} >
+        <div className={style.chat__window} id="chatWindow" onChange={this.scrollToBottom()} >
           { this.showMessages(messages) }
         </div>
         <form
