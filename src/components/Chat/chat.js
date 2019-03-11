@@ -11,6 +11,7 @@ class Chat extends Component {
 
     const newMessage = {
       from: this.props.userFrom,
+      date: new Date(),
       text: this.text.value,
     };
 
@@ -23,6 +24,10 @@ class Chat extends Component {
     return user !== userFrom.name ? true : false;
   };
 
+  showDate = (date) => {
+    return ` ${date.getHours()}:${date.getMinutes()}`;
+  };
+
   showMessages = (messages) => {
     return messages.map((message, i) => 
       <div 
@@ -32,10 +37,11 @@ class Chat extends Component {
           {[style.chat__window_received]: this.isMe(message.from.name)}
         )}
       >
-        <span className={style.chat__window_message_author}>
+        <span className={style.chat__window_message_info}>
           { this.isMe(message.from.name) ? message.from.name : 'You' }
+          { this.showDate(message.date) }
         </span>
-        <p>{ message.text }</p>
+        <p className={style.chat__window_message_text}>{ message.text }</p>
       </div>
     );
   };

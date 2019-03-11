@@ -29,11 +29,14 @@
       margin: em(5) em(5) 0;
       padding: .5em 1em;
 
-      &_author {
-        @include font-size-em(11, 14);
+      &_info {
+        @include font-size-em(10, 14);
 
-        font-weight: 800;
         margin-bottom: em(5, 11);
+      }
+
+      &_text {
+        font-weight: 800;
       }
     }
 
