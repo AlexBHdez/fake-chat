@@ -6,14 +6,12 @@ import './index.scss';
 import Header from './components/Header/header';
 import Footer from './components/Footer/footer';
 import Chat from './components/Chat/chat';
+import Intro from './components/Intro/intro';
 
 class App extends Component {
 
   state = {
-    users: [
-      { name: 'Alex' },
-      { name: 'Manu' }
-    ],
+    users: [],
     messages: [],
   }
 
@@ -30,6 +28,12 @@ class App extends Component {
     )
   };
 
+  users = (newUsers) => {
+    this.setState({
+      users: newUsers,
+    });
+  };
+
   send = (newMessage) => {
     if (newMessage.text !== '') {
       this.setState({
@@ -39,11 +43,12 @@ class App extends Component {
   };
 
   render() {
+    const { users } = this.state;
     return(
       <Fragment>
         <Header />
         <main>
-          { this.showChats() }
+          { users.length > 1 ? this.showChats() : <Intro submit={this.users} /> }
         </main>
         <Footer />
       </Fragment>

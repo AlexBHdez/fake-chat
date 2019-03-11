@@ -1,0 +1,12 @@
+@import '../../sass/mixins/index';
+
+.intro {
+  &__title {
+    margin-bottom: em(10);
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+  }
+}
