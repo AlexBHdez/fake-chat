@@ -1,0 +1,100 @@
+@import '../../sass/mixins/index';
+@import '../../sass/variables/variables';
+
+.chat {
+  @include flex(column, flex-end, stretch);
+  
+  height: 100%;
+  flex-basis: 50%;
+  
+  &:first-child {
+    border-right: 1px solid rgba($black, .15);
+  }
+
+  &__window {
+    @include font-size-em(14);
+    @include flex(column, flex-start, flex-end);
+
+    overflow-y: auto;
+    padding: 1.25em;
+
+    &_message {
+      @include box-shadow();
+
+      background-color: $primary;
+      color: $white;
+      border-radius: $radius-inputs;
+      
+      display: inline;
+      margin: em(5) em(5) 0;
+      padding: .5em 1em;
+
+      &_info {
+        @include font-size-em(10, 14);
+
+        margin-bottom: em(5, 11);
+      }
+
+      &_text {
+        font-weight: 600;
+        padding-top: em(5);
+      }
+    }
+
+    &_received {
+      align-self: flex-start;
+
+      background-color: $secondary;
+      color: $black;
+    }
+  }
+
+  &__write {
+    @include flex(row, center, stretch);
+
+    padding: em(20);
+
+    &_input {
+      flex: 1;
+
+      color: rgba($black, .65);
+
+      border: none;
+      border-radius: $radius-inputs;
+
+      height: $input-height;
+      padding-left: em(20);
+
+      &::placeholder {
+        color: rgba($black, .45);
+      }
+    }
+
+    &_button {
+      background-color: rgba($primary, .90);
+      color: $white;
+      transition: background-color $fast ease;
+
+      border: none;
+      border-radius: $circle;
+
+      width: 35px;
+      height: 35px;
+      margin-left: em(5);
+
+      position: relative;
+      
+      &::before {
+        @include triangle(right, em(8), em(8), $white);
+        
+        position: absolute;
+        top: 10px;
+        left: 15px;
+      }
+
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+}
