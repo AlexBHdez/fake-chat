@@ -12,9 +12,10 @@ body {
     @include flex(column, flex-start, stretch);
 
     header {
-      @include flex(column, center, center);
+      @include flex(row, space-between, center);
       
       height: $footer-header-height;
+      padding: 0 em(25);
     }
 
     main {

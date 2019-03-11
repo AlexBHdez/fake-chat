@@ -1,15 +1,30 @@
 @import '../../sass/variables/variables';
-@import '../../sass/mixins/em';
-@import '../../sass/mixins/font-size';
+@import '../../sass/mixins/index';
 
 .header {
   background-color: rgba($primary, .85);
-
-  .brand {
+  
+  &__brand {
     @include font-size-em(20);
+
     color: $white;
     font-weight: 800;
     text-transform: uppercase;
     text-decoration: none;
+  }
+  
+  &__copy {
+    @include font-size-em(14);
+    
+    color: $white;
+    
+    a {
+      color: rgba($white, .85);
+      text-decoration: none;
+      
+      &:hover {
+        color: $white;
+      }
+    }
   }
 }
