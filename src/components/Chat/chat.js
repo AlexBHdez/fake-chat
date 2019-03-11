@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-// Style
+// Styles
 import style from './chat.module.scss';
 import classNames from 'classnames/bind';
 const classes = classNames.bind(style);

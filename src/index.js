@@ -1,5 +1,7 @@
 import React, { Fragment, Component } from 'react';
 import ReactDOM from 'react-dom';
+
+// Styles
 import './index.scss';
 
 // Components
@@ -14,6 +16,7 @@ class App extends Component {
     messages: [],
   }
 
+  // Render the chats and passing the needed props.
   showChats = () => {
     const { users } = this.state;
 
@@ -28,12 +31,14 @@ class App extends Component {
     )
   };
 
+  // Call from intro component on submit.
   users = (newUsers) => {
     this.setState({
       users: newUsers,
     });
   };
 
+  // Call from chat component on submit message.
   send = (newMessage) => {
     if (newMessage.text !== '') {
       this.setState({
@@ -44,10 +49,12 @@ class App extends Component {
 
   render() {
     const { users } = this.state;
+
     return(
       <Fragment>
         <Header />
         <main>
+          {/* Render the intro until we have two usernamos */}
           { users.length > 1 ? this.showChats() : <Intro submit={this.users} /> }
         </main>
       </Fragment>

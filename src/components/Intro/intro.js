@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
+// Styles
 import style from './intro.module.scss';
 
 class Intro extends Component {
 
+  // Manage the input values and send them to the father.
   handleSubmit = (e) => {
     e.preventDefault();
 
